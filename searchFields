@@ -1,0 +1,8 @@
+
+SecondPage:
+// Att få följande textinmatningsfält att fungera: ”Sök efter produkt”, ”max pris”, ”min pris”, max alkohol” samt ”min alkohol” 
+
+searchFields
+
+Filter(Table1; TextInput5.Text in Namn; maxalkohol.Text in Alkoholhalt; minalkohol.Text in Alkoholhalt; (Value(Prisinklmoms) >= Value(minpris.Text) && Value(Prisinklmoms) <= Value(maxpris.Text)))
+//koden gör det möjligt för användaren att sortera på produktnamn men det blir strul vid sökning av min/max-fälten
