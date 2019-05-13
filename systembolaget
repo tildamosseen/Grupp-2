@@ -1,0 +1,42 @@
+FirstPage: 
+ageButton
+Navigate(Screen1;ScreenTransition.Fade)
+
+// Här så klickar vi på knappen och kommer till sida 1, där produkterna är listade.
+
+ageButton
+Navigate(Screen3;Fade) 
+// Om man trycker på knappen att man är under 20 år så kommer man till sida 3, 
+vilket innehåller en information-sida om varför man inte får ta del av appen om man är under 20.
+
+SecondPage:
+// Att få följande textinmatningsfält att fungera: ”Sök efter produkt”, ”max pris”, ”min pris”, max alkohol” samt ”min alkohol” 
+
+searchFields
+Filter(Table1; TextInput5.Text in Namn; maxalkohol.Text in Alkoholhalt; minalkohol.Text in Alkoholhalt; (Value(Prisinklmoms) >= Value(minpris.Text) && Value(Prisinklmoms) <= Value(maxpris.Text))) OBS DOCK FEL!!
+
+// Kod för att kunna koppla XML filen som ligger i en Excel till appen. Följande kommer visar vad vi vill att kunden ska se i listan med produkterna, det ska stå information som vad produkten heter, vad det är för typ av alkohol, vad produkten kostar samt vad den innehåller för alkoholhalt. 
+
+ThisItem.Namn
+ThisItem.Namn2
+ThisItem.Typ
+ThisItem.Prisinklmoms
+ThisItem.Alkoholhalt
+
+extendedInfomationButton 
+Navigate(Screen2;ScreenTransition.Fade) 
+// Här går man till sida 2, som innehåller mer information om en produkt.
+
+homeButton  
+Navigate(scrMain;Fade) – här går man tillbaka till startsidan
+
+ThirdPage
+
+homeButton 
+Navigate(Screen1;ScreenTransition.Fade) 
+// Här går man tillbaka till sida 1
+
+FourthPage
+homeButton
+Navigate(scrMain;Fade) 
+// Här går man till startsida
