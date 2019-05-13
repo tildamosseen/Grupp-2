@@ -1,1 +1,4 @@
 Navigate(Screen2;ScreenTransition.Fade)
+//Applikationen är kopplad till systembolagets XML-fil så att vi kan ta del av samtliga produkter. I produktlistan som finns på
+// sortiment-sidan så står namn på produkt, pris, alkoholhalt samt alkoholsort. För att användaren ska få ytterligare information
+//så kan man trycka på vidare-knappen för att få ta del av producent på den valda produkten, typ, sortiment, säljarstart med mera. 
