@@ -1,1 +1,2 @@
-
+Value(Alkoholhalt) <= Slider1.Value)
+// Den här koden gör det möjligt att filtrera alkoholhalt
