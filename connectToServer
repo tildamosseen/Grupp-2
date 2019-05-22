@@ -1,1 +1,9 @@
+thisitem.Namn
+thisitem.Namn2
+thisitem.Prisinklmoms
+thisitem.typ
+thisitem.Alkoholhalt
+// ovanstående så har jag kopplat från XML-filen, exempelvis att få allt som står under "namn" till 
+vår applikation och där kommer då namnet på produkten att stå, likaså när det kommer till alkoholhalt på den produkten så kommer det
+att listas i produktlistan. 
 
